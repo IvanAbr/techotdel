@@ -1,0 +1,286 @@
+body {
+	font-family: Roboto;
+}
+.header {
+	margin-top: 30px;
+}
+.header-link {
+	text-decoration: underline;
+	color: black;
+	font-weight: bold;
+}
+
+nav.navbar-default {
+	background-color: #008ac0;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+
+}
+.navbar-default .navbar-nav>li>a.a-navi {
+	color: white;
+}
+.navbar-default .navbar-nav>li>a.a-navi:hover {
+color: black;
+transition: 0.3s;
+}
+.lane-marg {
+	margin-bottom: 30px;
+}
+.cover-color {
+
+background-color: #008ac0;
+	} 
+	.cover-color:hover {
+		background-color: #03b92c;
+		transition: 0.7s;
+		cursor: pointer;
+		overflow: hidden;
+	}
+.cover {
+	padding: 20px;
+	text-align:center;
+	color: white;
+}
+.autsorce:hover {
+	background-size: inherit;
+	transition: all 0.65s ease 0s;
+	transform: scale(1.1);
+}
+.autstaf:hover {
+	background-size: inherit;
+	transition: all 0.65s ease 0s;
+	transform: scale(1.1);
+}
+.audit:hover {
+	background-size: inherit;
+	transition: all 0.65s ease 0s;
+	transform: scale(1.1);
+}
+.optimization:hover {
+	background-size: inherit;
+	transition: all 0.65s ease 0s;
+	transform: scale(1.1);
+}
+.business:hover {
+	background-size: inherit;
+	transition: all 0.65s ease 0s;
+	transform: scale(1.1);
+}
+.service:hover {
+	background-size: inherit;
+	transition: all 0.65s ease 0s;
+	transform: scale(1.1);
+}
+
+.main-link:hover {
+	text-decoration: none;
+}
+
+.title {
+	margin: 30px;
+}
+.title-big {
+	margin: 17px;
+}
+.autsorce {
+	background: url(images/autsorsing.png) center;
+	background-size: cover;
+}	
+.autstaf {
+	background: url(images/autstaffing.png) center;
+	background-size: cover;
+}
+.audit {
+	background: url(images/audyt.png) center;
+	background-size: cover;
+}
+.optimization {
+	background: url(images/optimization.png) center;
+	background-size: cover;
+}
+.business {
+	background: url(images/business-proc.png) center;
+	background-size: cover;
+}
+.service {
+	background: url(images/service-desk.png) center;
+	background-size: cover;
+}
+.question {
+	background-color: #ffcc66;
+	width: 100%;
+	padding: 20px;
+	margin-top: 125px;
+}
+.question-main {
+	background-color: white;
+	padding:20px;
+	
+	margin: 50px;
+}
+.question-title {
+	margin-top: 30px;
+	margin-bottom: 60px;
+	text-align: center;
+}
+.question-input {
+	width: 30%;
+	margin-bottom: 60px;
+	margin-right: 20px;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #bfbfbf;
+}
+.question-button {
+	width: 30%;
+	padding: 20px;
+	background-color: #00a327;
+	color: white;
+	border-radius: 7px;
+	border: none;
+	border-bottom: 3px solid #00831e;
+}
+.question-button:hover {
+	background-color: #018b22;
+	transition: 0.7s;
+	color: black;
+}
+.lane {
+	overflow: hidden;
+	padding-right: 0;
+	padding-left: 0;
+	margin-top: -10px;
+
+}
+.lane-post {
+	
+}
+.link-bottom {
+	display: block;
+	margin-bottom: 35px;
+	text-decoration: underline;
+}
+.footer {
+	margin-top: 45px;
+}
+.footer-title {
+	margin-bottom: 45px;
+}
+.footer-logo {
+	margin-top: 40px;
+}
+.footer-contacts {
+	margin-bottom: 40px;
+	
+}
+.footer-slogan {
+	margin-bottom: 65px;
+}
+.footer-owner {
+	margin-left:50px; 
+}
+
+.preloader {
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background: black;
+  z-index:2;
+  transition:1s all;
+  opacity:1;
+  visibility:visible;
+}
+
+ .loader {
+    width:75px;
+    height:75px;
+    border:15px solid white;
+    border-radius:50%;
+    border-top-color:#008ac0;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    animation: 1.5s spin infinite linear;
+  }
+
+.done {
+  visibility:hidden;
+  opacity:0;  
+}
+
+.loader__text {
+  color: white;
+  font-size: 40px;
+  position:absolute;
+    top:40%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+@keyframes spin {
+  from {
+     transform:translate(-50%,-50%) rotate(0deg) ;
+  }
+  to {
+    transform:translate(-50%,-50%) rotate(360deg) ;
+  }
+}
+
+@media (min-width: 1200px) {
+    
+ }
+ @media (max-width: 994px) {
+ .title-big {
+ 	margin: 4px;
+ }
+ }
+ @media (max-width: 767px) {
+   .title-big {
+ 	margin: 14px;
+ }
+ .cover-color {
+ 	margin-bottom: 20px;
+ }
+ nav.navbar-default {
+ 	display: block;
+ }
+ }
+ @media (max-width: 650px) {
+   .forms {
+   	display: flex;
+   	flex-direction: column;
+   	align-items: center;
+   }
+   .question-input {
+   	width: 50%;
+   }
+   .question-button {
+   	width: 50%;
+   }
+   .footer-photo {
+   	display: none;
+   }
+   .footer-logo {
+   	display: none;
+   }
+   .footer-top {
+   	display: flex;
+   	flex-direction: column;
+   	align-items: center;
+   }
+   .contacts {
+   	width: 100%;
+   }
+   .information {
+   	width: 100%;
+   }
+ @media (max-width: 480px) {
+  .question {
+  	display: none;
+  }
+   }
+
